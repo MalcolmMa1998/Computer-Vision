@@ -120,7 +120,7 @@ def main():
 
         # mAP
         for n in range(20):
-            print(database + ' (' + distance_order[n][0] + ').png, HOG相似度：' + str(1 - int(distance_order[n][1])))
+            print(database + ' (' + distance_order[n][0] + ').png, HOG相似度：' + str(1.0 - float(distance_order[n][1])))
             database_label = 0
             if int(distance_order[n][0]) > 90:
                 database_label = 1
